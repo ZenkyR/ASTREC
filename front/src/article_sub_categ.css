@@ -1,0 +1,58 @@
+.article_sub_categ_navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vh;
+    height: 10vh;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.article_sub_categ {
+    display: flex;
+}
+
+.article_sub_categ_filters {
+    margin-left: 10vh;
+    width: 40vh;
+    height: 70vh;
+    border: 1px black solid;
+}
+
+.article_sub_categ_filter {
+    display: flex;
+    align-items:center;
+    margin: 5vh 2vh;
+}
+
+.article_sub_categ_filter div {
+    margin-left: 2vh;
+}
+
+.article_sub_categ_filter h3 {
+    width: 15vh;
+}
+
+#prixMin, #prixMax {
+    width: 7vh;
+    height: 5px;
+}
+
+.filterPrix {
+    display: flex;
+}
+
+.article_sub_categ_articles {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 30px;
+    margin: 2vh 10vh;
+    max-height: 68vh;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+}
+
+.article_sub_categ img {
+    height: 50vh;
+    width: 40vh;
+}

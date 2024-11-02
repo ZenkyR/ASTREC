@@ -1,0 +1,211 @@
+a{
+  text-decoration: none;
+  color: #000;
+}
+.contain_category_home {
+    display: flex;
+    margin-bottom: 10px;
+}
+.display-row-home{
+  display: flex;
+  justify-content: space-between;
+}
+.display-row-home a{
+  margin-top: 4.5vh;
+  margin-right: 3%;
+}
+.display-row-home a:hover{
+  text-decoration: underline;
+}
+.display-categorie-home{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.img-categorie-home {
+  width: 237px;
+  height: 237px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 13%;
+  margin-left: 11%;
+}
+.img-categorie-home img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+.contains-categorie-home{
+  width: 309px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: #FFF;
+  margin-top: 1%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contains-categorie-home h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.subCategory_title {
+  width: 100vh;
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+.contain_article_home {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contain_article_home a {
+    text-decoration: none;
+    color: black;
+}
+.abox h2 {
+    text-align: center;
+}
+.abox p {
+    text-align: center;
+    margin: 50px;
+}
+.abox:hover {
+    height: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+}
+    
+.carousel {
+    width: 1700px; /* Adjust this value as per your requirement */
+    border-radius: 20px;
+}
+
+.carousel img {
+  border-radius: 20px;
+}
+
+.carousel .slide {
+  width: 150px; /* This will make the slide take full width of the carousel */
+  height: 300px; /* Adjust this value as per your requirement */
+}
+
+.carousel .slide img {
+  width: 100%; /* This will make the image take full width of the slide */
+  object-fit: cover; /* This will make the image cover the full area of the slide, cropping it if necessary */
+  height: 300px;
+}
+
+.carousel .control-dots .dot {
+  background: #ccc;
+  box-shadow: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #333;
+}
+
+.carousel-status {
+  display: none;
+}
+.title {
+  width: 495px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.abox{
+width: 309px;
+height: 407px;
+flex-shrink: 0;
+border-radius: 25px;
+background: #FFF;
+margin-top: 1%;
+padding-top: 5px;
+}
+
+.bin {
+  width: 237px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  
+  position: relative;
+  margin-top: 13%;
+  margin-left: 11%;
+}
+
+.bin img{
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  height: 200px;
+  border-radius: 20px;
+  background-size: cover;
+}
+
+.tendance_home {
+    margin-left: 100px;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    margin-top: 150px;
+}
+
+.ShowStockHome{
+font-size: 75%;
+}
+
+.PrixHome{
+  font-size: 125%;
+  margin-right: 100%;
+}
+
+.HoverCover{
+  filter: grayscale(100%);
+  }
+.baniere{
+  margin-top: 5%;
+  width: 100%;
+  height: 200px;
+  background-image: url(../public/Promotion.png);
+  margin-bottom: 5%;
+}
+.baniere h2 {
+  font-size: 150px;
+  text-align: center;
+  color: #aaff01;
+  cursor: pointer;
+}

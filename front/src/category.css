@@ -1,0 +1,68 @@
+.container_add_category {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2% 20%;
+    margin-right: 5%;
+    padding: 2%;
+    background-color: #00000031;
+    border-radius: 20px;
+}
+
+.box_category {
+    width: 100%;
+}
+
+.box-up {
+    border-bottom: 1px black solid;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.box-up-left {
+    border-right: 1px black solid;
+    width: 50%;
+}
+
+.label_file_left .label_file img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.box-up-right {
+    border-left: 1px black solid;
+    width: 50%;
+}
+
+.label_file_right .label_file img {
+    width: 80px;
+    height: 80px;
+}
+
+#sousCateNameRight {
+    width: 120px;
+    margin-top: 10px;
+}
+
+#submitSousCateName {
+    margin-top: 10px;
+}
+
+.sous-categ-bloc {
+    display: flex;
+}
+
+.categ_form_right {
+    border-right: 1px black solid;
+    width: 50%;
+}
+
+.list_sous-categ {
+    border: 1px black solid;
+    height: 145px;
+    width: 50%;
+}

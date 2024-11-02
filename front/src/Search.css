@@ -1,0 +1,9 @@
+.BoxFilter{
+
+    width: 374px;
+    height: 579px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+
+}

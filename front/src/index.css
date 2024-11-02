@@ -1,0 +1,597 @@
+@import "~react-responsive-carousel/lib/styles/carousel.min.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e9e9e9;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 0px;
+  height: 100vh;
+}
+
+code {
+  font-family: Roboto;
+}
+
+.container_nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  flex-shrink: 0;
+  background: #111;
+  z-index: 1;
+}
+.logo {
+  margin-left: 40px;
+}
+.logo img {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  background-size: cover;
+}
+.search {
+  height: 35px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.search input {
+  width: 40vw;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+  padding: 2px 20px;
+  background: #fff;
+  margin: 0 0 20px 0;
+}
+
+.search_container {
+  width: 40vw;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.nav {
+  display: inline-flex;
+  gap: 30px;
+  margin: auto;
+  margin-right: 1%;
+}
+.nav_one,
+.nav_two,
+.nav_three {
+  width: 150px;
+  height: 30px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(180deg, #d9ff7c 0%, #4aff59 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav_button {
+  width: 250px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.nav_button img {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 40px;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 1920px;
+  height: 66px;
+  background-color: #111;
+}
+
+.container_add_article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2% 25%;
+  padding: 2%;
+  background-color: #00000031;
+  border-radius: 20px;
+}
+
+.container_add_article span {
+  color: red;
+  margin: 0 30px;
+}
+
+.base_input,
+.container_add_article button {
+  width: 330px;
+  height: 20px;
+  flex-shrink: 0;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+}
+
+.base_input:hover {
+  background-color: #4aff59;
+}
+
+.container_add_article select {
+  width: 350px;
+  height: 40px;
+}
+
+.large_input {
+  width: 95%;
+  height: 190px;
+}
+
+.container_add_article button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.container_add_article button:hover {
+  background-color: #4aff59;
+  font-size: 15px;
+  width: 160px;
+  height: 55px;
+}
+
+.container_add_article button:active {
+  background-color: #4aff59;
+  font-size: 12px;
+  width: 140px;
+  height: 45px;
+}
+
+.add_article_img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.input_file {
+  display: none;
+}
+
+.label_file img {
+  display: inline-block;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* This will make sure the carousel container is a flex container and centers its children */
+
+.carousel {
+  width: 1000px; /* Adjust this value as per your requirement */
+  border-radius: 20px;
+}
+
+.carousel img {
+  border-radius: 20px;
+}
+.car {
+  width: 200px;
+  height: 200px;
+}
+.car .carousel-root {
+  width: 100%; /* Adjust this value as per your requirement */
+  height: 100%;
+  border-radius: 20px;
+  margin-left: 100%;
+}
+.carousel .slide {
+  width: 150px; /* This will make the slide take full width of the carousel */
+  height: 500px; /* Adjust this value as per your requirement */
+}
+
+.carousel .slide img {
+  width: 100%; /* This will make the image take full width of the slide */
+  object-fit: cover; /* This will make the image cover the full area of the slide, cropping it if necessary */
+  height: 500px;
+}
+
+.car .carousel {
+  width: 100%; /* Adjust this value as per your requirement */
+  border-radius: 20px;
+  margin-left: 25%;
+}
+
+.car .carousel .slide {
+  height: 100%; /* Adjust this value as per your requirement */
+}
+
+.car .carousel .slide img {
+  width: 100%; /* This will make the image take full width of the slide */
+  object-fit: cover; /* This will make the image cover the full area of the slide, cropping it if necessary */
+  height: 200px;
+}
+
+.car .carousel .control-arrow {
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 40%;
+}
+
+li label {
+  display: block;
+  width: 100%;
+}
+
+.carousel .control-dots .dot {
+  background: #ccc;
+  box-shadow: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #333;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.thumbs,
+.thumbs-wrapper {
+  display: none;
+}
+
+.label {
+  display: flex;
+  justify-content: space-around;
+}
+
+.label div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lign {
+  height: 6px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #d9ff7c 0%, #4aff59 100%);
+  text-align: center;
+  margin: auto;
+  z-index: 10;
+  width: 238px;
+}
+
+.sidebar {
+  background: #111;
+  width: 15%;
+  height: 90vh;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 5%;
+  z-index: 0;
+  overflow: auto;
+}
+
+.sidebar h1 {
+  margin: 0;
+  background-clip: text;
+  background: linear-gradient(180deg, #d9ff7c 0%, #4aff59 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.textarea {
+  margin: auto;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: 15%;
+}
+
+.left {
+  margin-left: 15%;
+}
+
+.mini_input {
+  width: 145px;
+}
+.category_mv {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  gap: 3%;
+}
+
+.search_container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.search_container table {
+  width: 100%;
+}
+
+.search_container .search_table:nth-child(odd) {
+  background: rgba(227, 227, 227, 0.9);
+}
+
+.search_container .search_table:nth-child(even) {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search_container .search_table:nth-child(1) {
+  border-radius: 20px 20px 0 0;
+}
+
+.search_container .search_table:nth-last-child(2) {
+  border-radius: 0 0 20px 20px;
+}
+
+.radius {
+  width: 100%;
+  padding: 1% 0;
+  border-radius: 20px;
+  background: rgba(227, 227, 227, 0.9);
+  text-align: center;
+}
+
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-hover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.cart-wrapper:hover .cart-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cart-wrapper:not(:hover) .cart-hover {
+  visibility: hidden;
+  opacity: 0;
+}
+.container_article_panier {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_article_panier img {
+  width: 200px;
+}
+
+.panier_article {
+  margin: 2% 7.5%;
+  padding: 2%;
+  border: #00000031 2px solid;
+  background-color: white;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.panier_article img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.pay_panier {
+  background-color: white;
+  width: 20%;
+  height: 60vh;
+  padding: 2%;
+  border-radius: 20px;
+  position: fixed;
+  top: 70%;
+  right: 10%;
+  transform: translate(-0%, -70%);
+  text-align: center;
+}
+
+.overflow {
+  overflow: auto;
+  width: 60%;
+  height: 70vh;
+  margin-left: 2.5%;
+}
+.cart-badge {
+  position: absolute;
+  color: black;
+  right: 12px;
+  bottom: 1px;
+  background: #79d32f;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart-hover {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50vh;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  overflow: auto;
+}
+
+.cart-wrapper:hover .cart-hover {
+  display: block;
+}
+
+.cart-hover-article {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-hover-article img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.cart-hover-content {
+  margin-bottom: 10px;
+}
+
+.st-hidden {
+  opacity: 1 !important;
+}
+
+.container_article {
+  margin: auto;
+  margin-left: 25%;
+  margin-top: 2%;
+  text-align: center;
+  width: 60%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.container_article button {
+  cursor: pointer;
+  background-color: #ffffff00;
+  border-radius: 20px;
+  padding: 1%;
+  border: none;
+}
+
+.article_btn {
+  border: 1px solid #00000031 !important;
+}
+
+.article_btn:hover {
+  background-color: #fffffff3;
+}
+
+.header_article {
+  margin-bottom: 20px;
+}
+
+.container_article_div {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.search_table td {
+  width: 100% !important;
+  border: none !important;
+}
+
+.search_table tr {
+  border-radius: 25px !important;
+}
+.desc-search-table {
+  display: flex;
+  justify-content: space-around;
+}
+.desc-search-table p {
+  margin-right: 10%;
+  display: block ruby;
+  margin-top: 15%;
+}
+.stock-search {
+  margin-right: 50% !important;
+}
+
+.admin{
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid #00000031;
+}
+
+.admin tbody tr:nth-child(odd) {
+  background-color: #a2eb8681;
+}
+
+.admin tbody tr:nth-child(even) {
+  background-color: #e7c4c442;
+}
+
+.admin tbody tr:hover {
+  background-color: #ffffff;
+}
+.admin th,
+.admin td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin th {
+  background-color: #f2f2f2;
+}
+
+.admin td img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}

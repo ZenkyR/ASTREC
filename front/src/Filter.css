@@ -1,0 +1,48 @@
+.btnFilter img {
+    height: 20px;
+}
+
+.TexteFilter {
+    font-size: 12px;
+}
+
+.FilterRoundBtn {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: linear-gradient(180deg, rgba(217, 255, 124, 0.90) 0%, rgba(74, 255, 89, 0.90) 100%);
+    top: -500px;
+}
+
+.cercle {
+    width: 15px;
+    height: 15px;
+    stroke: #000;
+    background-color: #FFF;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.none {
+    display: none;
+}
+
+
+.TexteFilter {
+    margin-left: 4px;
+    z-index: 4;
+    font-size: 8px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.FilterContainer {
+    padding-top: 5vh;
+}
